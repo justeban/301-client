@@ -11,7 +11,10 @@
 <script>
 
   (function(){
-    $.getJSON("https://swapi.co/api/starships")
+
+    let url = 'https://justin-morris-todo.herokuapp.com/api/v1/tasks'
+
+    $.getJSON(url)
     .then(ships => console.log(ships))
     .catch( console.error );
   })();
